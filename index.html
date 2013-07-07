@@ -1,0 +1,134 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<link rel="stylesheet" type="text/css" href="css/style.widget.tutorial.css"/>
+		<link rel="stylesheet" type="text/css" href="css/default.css"/>
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="js/jquery_ui.min.js"></script>
+		<script type="text/javascript" src="js/widget.tutorial.jquery.js"></script>
+
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$("body")
+				.tutorial({
+					steps : [ {
+						identifier : "#tuto1",
+						position : "bottom",
+						title : "Le titre 1", 
+						text : "Le texte 1"
+					}, {
+						identifier : "#tuto2",
+						position : "right",
+						title : "Le titre 2", 
+						text : "Le texte 2"
+					}, {
+						identifier : "#tuto3",
+						position : "top",
+						title : "Le titre 3", 
+						text : "Le texte 3"
+					}, {
+						identifier : "#tuto4",
+						position : "left",
+						title : "Le titre 4", 
+						text : "Le texte 4"
+					}
+					],
+					intro : {
+						launch:true,
+						title:"Tutorial Introduction",
+						text:"Welcome to the Jquery Tutorial Widget."+ 
+						"You are going to see a quick example of what can be down with "+
+						"it. First, the Introduction that you're reading right now,"+
+						"it is optional. You can choose between skiping the tutorial or launching it"
+					}
+				}).init().tutorial("start");
+			});
+		</script>
+		<title>Tutorial JQuery Widget</title>
+	</head>
+	<body>
+
+		<h1>Tutorial JQuery Widget</h1>
+		<div class="container">
+			<div class="three-column">
+				<div id="tuto1" class="column">
+					<h2>Gratuit</h2>
+					<p>
+						Donec sed odio dui. Etiam porta sem malesuada magna mollis
+						euismod. Nullam id dolor id nibh ultricies vehicula ut id elit.
+						Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
+						Praesent commodo cursus magna, vel scelerisque nisl consectetur et.
+					</p>
+					<p>
+						<a class="btn" href="#">View details »</a>
+					</p>
+				</div>
+				<div id="tuto2" class="column">
+					<h2>Génial</h2>
+					<p>
+						Duis mollis, est non commodo luctus, nisi erat porttitor
+						ligula, eget lacinia odio sem nec elit. Cras mattis consectetur
+						purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo,
+						tortor mauris condimentum nibh, ut fermentum massa justo sit amet
+						risus.
+					</p>
+					<p>
+						<a class="btn" href="#">View details »</a>
+					</p>
+				</div>
+				<div id="tuto4" class="column">
+					<h2>SUPER génial</h2>
+					<p>
+						Donec sed odio dui. Cras justo odio, dapibus ac facilisis in,
+						egestas eget quam. Vestibulum id ligula porta felis euismod semper.
+						Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum
+						nibh, ut fermentum massa justo sit amet risus.
+					</p>
+					<p>
+						<a class="btn" href="#">View details »</a>
+					</p>
+				</div>
+				<div class="clear"></div>
+			</div>
+			<hr>
+			<div>
+				<div>
+					<h2> First featurette headling. It'll blow
+						your mind.</h2>
+					<p>
+						Donec ullamcorper nulla non metus auctor
+						fringilla. Vestibulum id ligula porta felis euismod semper. Praesent
+						commodo cursus magna, vel scelerisque nisl consectetur. Fusce
+						dapibus, tellus ac cursus commodo.
+					</p>
+				</div>
+			</div>
+			<hr>
+			<div>
+				<div>
+					<h2 id="tuto3"> Oh yeah, it's that good. See for yourself.</h2>
+					<p>
+						Donec ullamcorper nulla non metus auctor
+						fringilla. Vestibulum id ligula porta felis euismod semper. Praesent
+						commodo cursus magna, vel scelerisque nisl consectetur. Fusce
+						dapibus, tellus ac cursus commodo.
+					</p>
+				</div>
+			</div>
+			<hr>
+			<div>
+				<div>
+					<h2> And lastly, this one. Checkmate.</h2>
+					<p>
+						Donec ullamcorper nulla non metus auctor
+						fringilla. Vestibulum id ligula porta felis euismod semper. Praesent
+						commodo cursus magna, vel scelerisque nisl consectetur. Fusce
+						dapibus, tellus ac cursus commodo.
+					</p>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

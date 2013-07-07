@@ -1,0 +1,21 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+
+.container {
+	height: 100;
+	width: 100;
+}
+.three-column {
+	margin-left: 10%;
+	width:80%;
+}
+.column {
+	width:28%;
+	margin-left: 4%;
+	float:left;
+}
+.clear {
+	clear:both;
+}
