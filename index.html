@@ -15,7 +15,7 @@
 				.tutorial({
 					steps : [ {
 						identifier : "#tuto1",
-						position : "bottom",
+						position : "right",
 						title : "Le titre 1", 
 						text : "Le texte 1"
 					}, {
@@ -33,6 +33,11 @@
 						position : "left",
 						title : "Le titre 4", 
 						text : "Le texte 4"
+					}, {
+						identifier : "#tuto5",
+						position : "top",
+						title : "Le titre 5", 
+						text : "Le texte 5"
 					}
 					],
 					intro : {
@@ -44,6 +49,16 @@
 						"it is optional. You can choose between skiping the tutorial or launching it"
 					}
 				}).init().tutorial("start");
+				
+				$("body").on("tutorialexit", function() {
+					$('html,body').animate({
+				    	scrollTop: 0
+				    },'slow');	
+				}).on("tutorialend", function() {
+					$('html,body').animate({
+				    	scrollTop: 0
+				    },'slow');	
+				});
 			});
 		</script>
 		<title>Tutorial JQuery Widget</title>
@@ -121,6 +136,90 @@
 			<div>
 				<div>
 					<h2> And lastly, this one. Checkmate.</h2>
+					<p>
+						Donec ullamcorper nulla non metus auctor
+						fringilla. Vestibulum id ligula porta felis euismod semper. Praesent
+						commodo cursus magna, vel scelerisque nisl consectetur. Fusce
+						dapibus, tellus ac cursus commodo.
+					</p>
+				</div>
+			</div>
+			<hr>
+			<div>
+				<div>
+					<h2> And lastly, this one. Checkmate.</h2>
+					<p>
+						Donec ullamcorper nulla non metus auctor
+						fringilla. Vestibulum id ligula porta felis euismod semper. Praesent
+						commodo cursus magna, vel scelerisque nisl consectetur. Fusce
+						dapibus, tellus ac cursus commodo.
+					</p>
+				</div>
+			</div>
+			<hr>
+			<div>
+				<div>
+					<h2> And lastly, this one. Checkmate.</h2>
+					<p>
+						Donec ullamcorper nulla non metus auctor
+						fringilla. Vestibulum id ligula porta felis euismod semper. Praesent
+						commodo cursus magna, vel scelerisque nisl consectetur. Fusce
+						dapibus, tellus ac cursus commodo.
+					</p>
+				</div>
+			</div>
+			<hr>
+			<div>
+				<div>
+					<h2> And lastly, this one. Checkmate.</h2>
+					<p>
+						Donec ullamcorper nulla non metus auctor
+						fringilla. Vestibulum id ligula porta felis euismod semper. Praesent
+						commodo cursus magna, vel scelerisque nisl consectetur. Fusce
+						dapibus, tellus ac cursus commodo.
+					</p>
+				</div>
+			</div>
+			<hr>
+			<div>
+				<div>
+					<h2> And lastly, this one. Checkmate.</h2>
+					<p>
+						Donec ullamcorper nulla non metus auctor
+						fringilla. Vestibulum id ligula porta felis euismod semper. Praesent
+						commodo cursus magna, vel scelerisque nisl consectetur. Fusce
+						dapibus, tellus ac cursus commodo.
+					</p>
+				</div>
+			</div>
+			<hr>
+			<div>
+				<div>
+					<h2> And lastly, this one. Checkmate.</h2>
+					<p>
+						Donec ullamcorper nulla non metus auctor
+						fringilla. Vestibulum id ligula porta felis euismod semper. Praesent
+						commodo cursus magna, vel scelerisque nisl consectetur. Fusce
+						dapibus, tellus ac cursus commodo.
+					</p>
+				</div>
+			</div>
+			<hr>
+			<div>
+				<div>
+					<h2> And lastly, this one. Checkmate.</h2>
+					<p>
+						Donec ullamcorper nulla non metus auctor
+						fringilla. Vestibulum id ligula porta felis euismod semper. Praesent
+						commodo cursus magna, vel scelerisque nisl consectetur. Fusce
+						dapibus, tellus ac cursus commodo.
+					</p>
+				</div>
+			</div>
+			<hr>
+			<div>
+				<div>
+					<h2 id="tuto5"> And lastly, this one. Checkmate.</h2>
 					<p>
 						Donec ullamcorper nulla non metus auctor
 						fringilla. Vestibulum id ligula porta felis euismod semper. Praesent

@@ -93,7 +93,9 @@
 			if(this.options.steps.length!=(this.options.currentStep)) {
 				this.show();
 				this._trigger("afternext");
-			} 
+			} else {
+				this._trigger("end");
+			}
 		},
 		// go to previous step
 		prev: function () {
@@ -198,6 +200,10 @@
 		});
 		
 		delegateEvents(widget);
+		
+		$('html,body').animate({
+	    	scrollTop: $(widget.options.id).offset().top
+	    },'slow');	
 	}
 	
 	/**
@@ -406,19 +412,19 @@
 		var currentStep = widget.options.currentStep;
 		var step = widget.options.steps[currentStep];
 		var borderSize = widget.options.borderSize;
+		var x=$(step.identifier).offset().left;
+		var y=$(step.identifier).offset().top;
 	
 		var $divBordered = $("<div/>")
 			.attr('id', 'bordered-tutorial')
-			.position({
-				of: $(step.identifier),
-				at: "left-"+(borderSize-1)+" top-"+(borderSize-1)
-			})
 			.css({
 				'height':height,
 				'width':width,
 				"border":borderSize+"px solid #"+widget.options.borderColor,
 				'z-index' : 5010,
-				'position' : 'absolute'
+				'position' : 'absolute',
+				'top' : y,
+				'left' : x
 			});
 		
 		$("body").append($divBordered);
