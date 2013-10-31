@@ -3,64 +3,13 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-		<link rel="stylesheet" type="text/css" href="css/style.widget.tutorial.css"/>
+		<link rel="stylesheet" type="text/css" href="css/usertour.css"/>
 		<link rel="stylesheet" type="text/css" href="css/default.css"/>
 		<script type="text/javascript" src="js/jquery.min.js"></script>
 		<script type="text/javascript" src="js/jquery_ui.min.js"></script>
-		<script type="text/javascript" src="js/widget.tutorial.jquery.min.js"></script>
+		<script type="text/javascript" src="js/usertour.js"></script>
 
-		<script type="text/javascript">
-			$(document).ready(function() {
-				$("body")
-				.tutorial({
-					steps : [ {
-						identifier : "#tuto1",
-						position : "right",
-						title : "Le titre 1", 
-						text : "Le texte 1"
-					}, {
-						identifier : "#tuto2",
-						position : "right",
-						title : "Le titre 2", 
-						text : "Le texte 2"
-					}, {
-						identifier : "#tuto3",
-						position : "top",
-						title : "Le titre 3", 
-						text : "Le texte 3"
-					}, {
-						identifier : "#tuto4",
-						position : "left",
-						title : "Le titre 4", 
-						text : "Le texte 4"
-					}, {
-						identifier : "#tuto5",
-						position : "top",
-						title : "Le titre 5", 
-						text : "Le texte 5"
-					}
-					],
-					intro : {
-						launch:true,
-						title:"Tutorial Introduction",
-						text:"Welcome to the Jquery Tutorial Widget."+ 
-						"You are going to see a quick example of what can be down with "+
-						"it. First, the Introduction that you're reading right now,"+
-						"it is optional. You can choose between skiping the tutorial or launching it"
-					}
-				}).init().tutorial("start");
-				
-				$("body").on("tutorialexit", function() {
-					$('html,body').animate({
-				    	scrollTop: 0
-				    },'slow');	
-				}).on("tutorialend", function() {
-					$('html,body').animate({
-				    	scrollTop: 0
-				    },'slow');	
-				});
-			});
-		</script>
+		<script type="text/javascript" src="js/tourconfig.js"></script>
 		<title>Tutorial JQuery Widget</title>
 	</head>
 	<body>
