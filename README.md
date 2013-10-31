@@ -6,6 +6,9 @@ README
 It's a jQuery widget for web applications that want to offer a step by step tour to their users.
 
 
+[You can try it here if you want](http://www.emeric-stophe.fr/tutorial-jquery/)
+
+
 ## Requirements
 
 jQuery dependency
