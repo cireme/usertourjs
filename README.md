@@ -15,25 +15,25 @@ jQuery dependency
 
 ### Setting the widget in your project
 
-1. Download the 'usertour.js', the 'usertour.css' and add it to your project
+1. Download the `usertour.js`, the `usertour.css` and add it to your project
 
 2. Create a config file use to set your different steps, 'tourcongig.js' as done in the example
 
 3. Set class or id on the part of your web app that you want to show
 
-'''html
+```html
 <h2 id="tuto1"> First I want to show this special title to the user</h2>
 
 <div id="tuto2">
 	Then I want to show this element to the user
 </div>
-'''
+```
 
 4. Set your steps in the config file 
 
 For example 
 
-'''javascript
+```javascript
 $(document).ready(function() {
 	$("body") /* Apply it on the body */
 		.tutorial({
@@ -52,7 +52,7 @@ $(document).ready(function() {
 		.init() /* Call the widget init method */
 		.tutorial("start"); /* And launch it */ 
 });
-'''
+```
 
 Here is a simple example of a tour of two steps
 
@@ -61,7 +61,7 @@ Here is a simple example of a tour of two steps
 
 Different options can be set to the tour or to the different steps. They all have default values to work on first launch. You can change the container, the id of the tool-tip, the border-color of the highlight or even the button text :
 
-'''javascript
+```javascript
 id:".tutorial-tooltip",
 steps : [],
 intro : {
@@ -84,4 +84,4 @@ endBtnText : "The end",
 borderColor : "004ECC",
 borderSize: 1,
 last: false
-'''
+```
