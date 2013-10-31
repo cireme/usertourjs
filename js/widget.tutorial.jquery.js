@@ -81,6 +81,11 @@
 		setStep: function (step, index) {			
 			this.options.steps[index] = step;
 		},
+		// remove the given step
+		removeStep: function (index) {			
+			this.options.steps.splice(index, 1);
+
+		},
 		// get the current step
 		getCurrentStep: function() {
 			return this.options.currentStep;
