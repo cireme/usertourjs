@@ -19,7 +19,7 @@ jQuery dependency
 
 2. Create a config file use to set your different steps, 'tourcongig.js' as done in the example
 
-3. Set class or id on the part of your web app that you want to show
+###### Set class or id on the part of your web app that you want to show
 
 ```html
 <h2 id="tuto1"> First I want to show this special title to the user</h2>
@@ -29,7 +29,7 @@ jQuery dependency
 </div>
 ```
 
-4. Set your steps in the config file 
+###### Set your steps in the config file 
 
 For example 
 
